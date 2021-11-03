@@ -27,10 +27,13 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
-		System.out.println("=== TESTE 4: Seller Insert ===");
-		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, dep);
-		sellerDao.insert(newSeller);
-		System.out.println("Inserido! Novo id = " + newSeller.getId());
+		
+		System.out.println("=== TESTE 5: Seller Insert ===");
+		seller = sellerDao.findById(1);
+		seller.setName("Martha Waine");
+		seller.setEmail("martha@gmail.com");
+		sellerDao.update(seller);
+		System.out.println("Update Concluido");
 
 	}
 
