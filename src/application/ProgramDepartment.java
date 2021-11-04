@@ -18,7 +18,7 @@ public class ProgramDepartment {
 		depDao.insert(dep);
 		System.out.println("Ação concluida com sucesso!");*/
 		
-		System.out.println("=== TESTE 2: Department UpDate ===");
+		System.out.println("=== TESTE 2: DepartmentDao UpDate ===");
 		System.out.println("Digite o nome para atualizar");
 		Department dep = new Department();
 		String name = sc.next();
